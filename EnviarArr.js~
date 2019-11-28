@@ -1,0 +1,10 @@
+function enviarArr(code){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+	if(this.readyState == 4 && this.status == 200){
+	    console.log(code);
+	}//if
+    };//onreadystatechange
+    xhttp.open("POST", "intermedioArreglo.js",true);
+    xhttp.send(code);
+}//funcion para enviar el arreglo

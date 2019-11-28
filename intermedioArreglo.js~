@@ -1,0 +1,7 @@
+function crearTXT(){
+    const execSync = require('child_process').execSync;
+    var request = require('request');
+    var fs = require();
+    console.log("estoy en creartxt");
+}//creando txt del arreglo en el servidor
+module.exports.llamada = crearTXT;

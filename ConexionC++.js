@@ -10,7 +10,7 @@ function llamarc() {
 	    console.log("llamando a funcion intermedio.js");
 	}//if
     };
-    xhttp.open("POST", "intermedio.js", true);
+    xhttp.open("GET", "intermedio.js", true);
     xhttp.send();
 }
 

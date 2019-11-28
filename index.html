@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Blockly Demo: Generating JavaScript</title>
+  <script type = "text/javascript" src = "EnviarArr.js"></script>
   <script type = "text/javascript" src = "ConexionC++.js"></script>
   <script src="blockly_compressed.js"></script>
   <script src="blocks_compressed.js"></script>
@@ -144,7 +145,8 @@
 
      document.body.removeChild(element);
      //aca deberia haber una espera de unos segundos por si acaso
-     llamarc();//<---------------llamada POST al servidor
+     enviarArr(code);//<----llamada
+     llamarc();//<---------------llamada POST al servidor				 
   };
 
     function runCode() {
